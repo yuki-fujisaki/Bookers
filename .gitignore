@@ -1,2 +1,5 @@
 # OS X
 .DS_Store
+
+/bookers-front/node_modules
+/bookers-front/.next
