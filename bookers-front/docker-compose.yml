@@ -1,0 +1,14 @@
+services:
+  front-nextjs:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.local.app
+    container_name: "front-nextjs"
+    ports:
+      - "3333:3000"
+      - "6666:6006"
+    volumes:
+      - ./app:/usr/app
+    working_dir: /usr/app
+    stdin_open: true
+    tty: true
